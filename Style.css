@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@700&display=swap');
+
+body {
+  font-family: 'Astloch', cursive;
+  font-weight: 700; /* bold */
+  color: red;
+}
+
+  margin: 0;
+  background-color: #fafafa;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
