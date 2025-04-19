@@ -1,111 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Sancreek&display=swap');
+
 body {
-  font-family:  "Sancreek", serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #000, #444);
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #000, #1a1a1a);
   color: crimson;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden;
-  body {
-  background-color: red;
 }
 
-.card {
+@keyframes pullCard {
+  0% {
+    transform: translateY(100vh) scale(0.1) rotate(-15deg);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-20vh) scale(1.05) rotate(3deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+}
+
+.popup {
   width: 300px;
-  height: 450px;
-  background-color: white;
-  border: 5px solid black;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transform-style: preserve-3d;
-  transition: transform 1.2s ease;
-  transform: rotateY(0deg);
+  aspect-ratio: 2.5 / 3.5;
+  background: white;
+  border: 2px solid crimson;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   position: relative;
-  font-family: 'Special Elite', sans-serif;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  font-family: "Special Elite", system-ui;
+  animation: pullCard 1s ease-out forwards;
+  transform-origin: center center;
 }
 
-.card.flipped {
-  transform: rotateY(180deg);
+.popup h2 {
+  font-family: "Sancreek", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  color: crimson;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.card::before,
-.card::after {
-  content: "8♥";
-  color: red;
-  font-size: 2em;
-  position: absolute;
-}
-
-.card::before {
-  top: 10px;
-  left: 10px;
-}
-
-.card::after {
-  bottom: 10px;
-  right: 10px;
-  transform: rotate(180deg);
-}
-
-.card h3,
-.card p,
-.card button {
-  text-align: center;
-  margin: 10px 0;
-}
-
-}
-
-.container {
-  text-align: center;
-}
-
-h1, h2 {
-  color: gold;
-}
-
-button {
-  background-color: crimson;
-  border: 2px solid black;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: white;
+.popup p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
   color: black;
 }
 
-.card-container {
-  perspective: 1000px;
-}
-
-.card {
-  width: 300px;
-  height: 450px;
-  background-color: red;
-  border: 5px solid black;
+.popup button {
+  padding: 0.8rem 1.5rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Sancreek", serif;
+  border: none;
   border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  transform-style: preserve-3d;
-  transition: transform 1.2s ease;
-  transform: rotateY(0deg);
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.card.flipped {
-  transform: rotateY(180deg);
+.popup button:hover {
+  background-color: #d40000;
 }
 
+.popup .label {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+  font-family: "Special Elite", system-ui;
 }
 
