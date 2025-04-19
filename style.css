@@ -49,7 +49,7 @@ button:hover {
     text-align: center;
     padding: 20px;
     transform-style: preserve-3d;
-    animation: flipCard 2s forwards;
+    animation: flipCard 5s forwards;
 }
 
 @keyframes flipCard {
