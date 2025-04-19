@@ -6,6 +6,7 @@
   <title>SALAMA ROYALE</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -32,4 +33,15 @@
     <button onclick="startGame()">HOW LONG 'TIL?</button>
   </div>
 
-  <script
+  <script>
+    function closePopup() {
+      document.getElementById("cardPopup").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+
+    function startGame() {
+      alert("Game starts soon… 👀");
+    }
+  </script>
+</body>
+</html>
