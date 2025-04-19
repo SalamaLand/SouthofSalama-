@@ -1,45 +1,12 @@
 body {
-  background-color: black
+  background: url('https://www.transparenttextures.com/patterns/dark-denim.png'), linear-gradient(135deg, #000000, #0d0d0d);
+  background-size: cover;
   color: crimson;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: "Bebas Neue", sans-serif;
-}
-
-.container {
-  text-align: center;
-  padding: 2rem;
-  border: 2px solid black;
-  border-radius: 15px;
-  background-color: black;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-button {
-  padding: 1rem 2rem;
-  background-color: crimson;
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #ffd700;
+  font-family:"Bebas Neue", sans-serif;
 }
 
 
