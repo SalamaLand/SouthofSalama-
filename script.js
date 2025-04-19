@@ -1,5 +1,13 @@
-window.onload = function () {
-    // Delay to show the flipping animation
-    setTimeout(function () {
-        document.getElementById('firstCard').style.transform = 'rotateY(180deg)';
-};
+function flipCard() {
+  const card = document.getElementById('firstCard');
+  card.classList.add('flipped');
+}
+
+function startExperience() {
+  document.getElementById('cardContainer').style.display = 'none';
+  document.getElementById('contentContainer').style.display = 'block';
+}
+
+function startGame() {
+  alert("Let the game begin!");
+}
