@@ -1,40 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@700&display=swap');
-
-body {
-  font-family: 'Astloch', cursive;
-  font-weight: 700; /* bold */
-  color: red;
+.playfair-display-sc-regular {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-  margin: 0;
-  background-color: #fafafa;
+.playfair-display-sc-bold {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-header {
-  background-color: #0077cc;
-  color: white;
-  padding: 20px;
-  text-align: center;
+.playfair-display-sc-black {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+.playfair-display-sc-regular-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
-main {
-  padding: 20px;
+.playfair-display-sc-bold-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 700;
+  font-style: italic;
 }
 
-section {
-  margin-bottom: 30px;
+.playfair-display-sc-black-italic {
+  font-family: "Playfair Display SC", serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #555;
-}
