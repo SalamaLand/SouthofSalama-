@@ -1,22 +1,35 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-</style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SALAMA ROYALE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Dimmed background -->
+  <div id="overlay" class="popup-overlay"></div>
+
+  <!-- Poker card popup -->
   <div id="cardPopup" class="popup-card">
-  <div class="card-top">8♥</div>
-  <div class="card-brand">SALAMA ROYALE</div>
-  <div class="card-center">
-    <h2>Pay the house</h2>
-    <p>Fee: One (1) birthday wish</p>
-    <button onclick="location.href='wish.html'">PAY NOW</button>
+    <div class="card-top">8♥</div>
+    <div class="card-brand">SALAMA ROYALE</div>
+    <div class="card-center">
+      <h2>Pay the house</h2>
+      <p>Fee: One (1) birthday wish</p>
+      <button onclick="location.href='wish.html'">PAY NOW</button>
+    </div>
+    <div class="card-bottom">♥8</div>
+    <div class="close-btn" onclick="closePopup()">✕</div>
   </div>
-  <div class="card-bottom">♥8</div>
-</div>
-</body>
-</html>
+
+  <!-- Optional: your homepage container underneath -->
+  <div class="container">
+    <h1>What are you waiting for?</h1>
+    <p>WELCOME TO SALAMA ROYALE</p>
+    <button onclick="startGame()">HOW LONG 'TIL?</button>
+  </div>
+
+  <script
