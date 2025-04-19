@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SALAMA ROYALE</title>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Correct path for your CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SALAMA ROYALE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card-container" id="cardContainer">
-        <div class="card" id="firstCard">
-            <h3>SALAMA ROYALE</h3>
-            <p>Pay the house</p>
-            <p>Fee: One (1) birthday wish</p>
-            <button onclick="window.location.href='wishPage.html'">PAY NOW</button>
-        </div>
+  <div class="card-container" id="cardContainer">
+    <div class="card" id="firstCard" onclick="flipCard()">
+      <h3>SALAMA ROYALE</h3>
+      <p>Pay the house</p>
+      <p>Fee: One (1) birthday wish</p>
+      <button onclick="startExperience()">PAY NOW</button>
     </div>
+  </div>
 
-    <div class="container" id="contentContainer" style="display:none;">
-        <h1>SALAMA ROYALE</h1>
-        <h2>What are you waiting for?</h2>
-        <p>Welcome to the party! Let’s see what you’re wearing...</p>
-        <button onclick="startGame()">HOW LONG 'TIL?</button>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+  <div class="container" id="contentContainer" style="display: none;">
+    <
