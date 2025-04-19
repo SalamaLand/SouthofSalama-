@@ -1,120 +1,74 @@
 body {
-    font-family: 'Special Elite', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #000, #444);
-    color: crimson;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Sancreek", serif;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.container {
-    text-align: center;
-}
-
-h1, h2 {
-    color: gold;
-}
-
-button {
-    background-color: crimson;
-    border: 2px solid black;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: gold;
-    color: black;
-}
-
+/* Card-style popup */
 .popup {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: red;
-    border: 5px solid black;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
-    padding: 20px;
+  width: 300px;
+  aspect-ratio: 2.5 / 3.5;
+  background: white;
+  border: 2px solid crimson;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  position: relative;
+  font-family: "Sancreek", serif;
 }
 
-.popup .card {
-    font-family: 'Special Elite', sans-serif;
+/* Crisp title inside card */
+.popup h2 {
+  font-family: "Sancreek", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  color: crimson;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Fee description */
+.popup p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: black;
+}
+
+/* Button */
 .popup button {
-    background-color: black;
-    color: crimson;
-    padding: 10px 20px;
-    border: none;
-    margin-top: 20px;
+  padding: 0.8rem 1.5rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  font-family: "Sancreek", serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .popup button:hover {
-    background-color: crimson;
-    color: black;
+  background-color: #d40000;
 }
-
-/* Card Animation Styles */
-.card-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    perspective: 1000px;
-}
-
-.card {
-    width: 300px;
-    height: 450px;
-    background-color: red;
-    border: 5px solid black;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    transform-style: preserve-3d;
-    transform: rotateY(0deg);
-    animation: flipCard 2s forwards;
-    font-family: 'Special Elite', sans-serif;
-}
-
-.card h3, .card p {
-    margin: 10px 0;
-}
-
-.card button {
-    background-color: black;
-    color: crimson;
-    padding: 10px 20px;
-    border: none;
-    margin-top: 20px;
-}
-
-.card button:hover {
-    background-color: crimson;
-    color: black;
-}
-
-@keyframes flipCard {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(180deg);
-    }
-}
-
 
 /* Optional: Small SALAMA ROYALE label like a card maker */
 .popup .label {
   position: absolute;
   top: 8px;
-  left: 12
+  left: 12px;
+  font-size: 0.9rem;
+  color: black;
+  font-weight: bold;
+}
