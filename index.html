@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SALAMA ROYALE</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALAMA ROYALE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- Dimmed background -->
-  <div id="overlay" class="popup-overlay"></div>
-
-  <!-- Poker card popup -->
-  <div id="cardPopup" class="popup-card">
-    <div class="card-top">8♥</div>
-    <div class="card-brand">SALAMA ROYALE</div>
-    <div class="card-center">
-      <h2>Pay the house</h2>
-      <p>Fee: One (1) birthday wish</p>
-      <button onclick="location.href='wish.html'">PAY NOW</button>
+    <div class="card-container" id="cardContainer">
+        <div class="card" id="firstCard">
+            <h3>SALAMA ROYALE</h3>
+            <p>Pay the house</p>
+            <p>Fee: One (1) birthday wish</p>
+            <button onclick="window.location.href='wishPage.html'">PAY NOW</button>
+        </div>
     </div>
-    <div class="card-bottom">♥8</div>
-    <div class="close-btn" onclick="closePopup()">✕</div>
-  </div>
 
-  <!-- Optional: your homepage container underneath -->
-  <div class="container">
-    <h1>What are you waiting for?</h1>
-    <p>WELCOME TO SALAMA ROYALE</p>
-    <button onclick="startGame()">HOW LONG 'TIL?</button>
-  </div>
+    <div class="container" id="contentContainer">
+        <h1>SALAMA ROYALE</h1>
+        <h2>What are you waiting for?</h2>
+        <p>Welcome to the party! Let’s see what you’re wearing...</p>
+        <button onclick="startGame()">HOW LONG 'TIL?</button>
+    </div>
 
-  <script>
-    function closePopup() {
-      document.getElementById("cardPopup").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
-    }
+    <div class="popup" id="popup">
+        <div class="card">
+            <h3>SALAMA ROYALE</h3>
+            <p>Pay the house</p>
+            <p>Fee: One (1) birthday wish</p>
+            <button onclick="window.location.href='wishPage.html'">PAY NOW</button>
+        </div>
+    </div>
 
-    function startGame() {
-      alert("Game starts soon… 👀");
-    }
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
