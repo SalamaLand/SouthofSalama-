@@ -9,6 +9,59 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
+  body {
+  background-color: red;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform 1.2s ease;
+  transform: rotateY(0deg);
+  position: relative;
+  font-family: 'Special Elite', sans-serif;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card::before,
+.card::after {
+  content: "8♥";
+  color: red;
+  font-size: 2em;
+  position: absolute;
+}
+
+.card::before {
+  top: 10px;
+  left: 10px;
+}
+
+.card::after {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+.card h3,
+.card p,
+.card button {
+  text-align: center;
+  margin: 10px 0;
+}
+
 }
 
 .container {
@@ -29,7 +82,7 @@ button {
 }
 
 button:hover {
-  background-color: gold;
+  background-color: white;
   color: black;
 }
 
