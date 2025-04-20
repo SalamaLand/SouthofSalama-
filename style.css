@@ -158,7 +158,7 @@ body {
 .hearts-bottom {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 15px;
   margin: 10px 0;
 }
 
@@ -168,7 +168,7 @@ body {
 
 .heart {
   color: crimson;
-  font-size: 1.2rem;
+  font-size: 2rem;
   animation: heartbeat 1.4s infinite;
 .hearts-row {
   display: flex;
@@ -178,7 +178,7 @@ body {
 }
 
 .heart {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: crimson;
   animation: heartbeat 1.2s infinite;
 }
