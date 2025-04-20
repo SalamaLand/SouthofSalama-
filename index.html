@@ -1,35 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SALAMA ROYALE</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="popup"
-    <span class="close-btn" onclick="closePopup()">✕</span>
-    <div class="card-header">SALAMA ROYALE</div>
-<div class="corner top-left">8♥</div>
-    <div class="heart-row top-hearts">
-      <span>♥</span><span>♥</span><span>♥</span><span>♥</span>
-    </div>
-    <div class="corner bottom-right">8♥</div> 
-    <h2>Pay the house</h2>
-    <p class="fee-text">Fee: One (1) birthday wish</p>
-    <button onclick="location.href='wish.html'">PAY NOW</button>
+<div class="popup">
+  <div class="close-btn" onclick="closePopup()">✕</div>
+  <div class="title">SALAMA ROYALE</div>
 
-    <div class="heart-row bottom-hearts">
-      <span>♥</span><span>♥</span><span>♥</span><span>♥</span>
-    </div>
+  <div class="corner top-left">8♥</div>
+  <h2>Pay the house</h2>
+  <p>Fee: One (1) birthday wish</p>
+<div class="corner bottom-right">8♥</div>
+  
+  <div class="hearts above">
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
   </div>
-</body>
-<script>
-  function closePopup() {
-    document.querySelector('.popup').style.display = 'none';
-  }
-</script>
 
-</html>
+  <button onclick="window.location.href='wish.html'">PAY NOW</button>
+
+  <div class="hearts below">
+    <span class="heart upside-down">♥</span>
+    <span class="heart upside-down">♥</span>
+    <span class="heart upside-down">♥</span>
+    <span class="heart upside-down">♥</span>
+  </div>
+</div>
 
