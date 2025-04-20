@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Sancreek", serif;
   background: linear-gradient(135deg, #000, #1a1a1a);
-  color: crimson;
+  color: gold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +30,18 @@ body {
   0%, 100% {
     transform: scale(1);
   }
+  25% {
+    transform: scale(1.2);
+  }
   50% {
-    transform: scale(1.3);
+    transform: scale(0.95);
+  }
+  75% {
+    transform: scale(1.05);
   }
 }
 
-.popup {
- 
+.container {
   text-align: center;
   padding: 5rem 3rem;
   border: 3px solid gold;
@@ -48,33 +55,37 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 300px;
+}
+
+.popup {
+  width: 80vw;
+  max-width: 500px;
   aspect-ratio: 2.5 / 3.5;
   background: white;
   border: 2px solid crimson;
   border-radius: 20px;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   position: relative;
-  animation: pullCard 1s ease-out forwards;
   font-family: "Sancreek", serif;
+  animation: pullCard 1s ease-out forwards;
+  transform-origin: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
-.card-header {
-  font-family: "Sancreek", serif;
-  font-size: 1rem;
-  font-weight: bold;
-  color: black;
+.popup .title {
   position: absolute;
   top: 8px;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
 }
+
 .corner {
   position: absolute;
   font-size: 2rem;
@@ -93,91 +104,64 @@ body {
   right: 10px;
   transform: rotate(180deg);
 }
+
 .popup h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
   margin: 1rem 0 0.5rem;
   color: crimson;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.fee-text {
-  font-size: 1.1rem;
-  margin: 0.5rem 0 1.5rem;
+.popup p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
   color: crimson;
 }
 
 .popup button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.4rem;
   background-color: crimson;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   font-family: "Sancreek", serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
-  z-index: 1;
+  margin-top: 1rem;
 }
 
 .popup button:hover {
   background-color: #d40000;
 }
 
-.heart-row {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
+.exit-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
   font-size: 1.5rem;
-  color: crimson;
-  animation: heartbeat 1.5s infinite ease-in-out;
+  color: black;
+  cursor: pointer;
 }
 
-.bottom-hearts span {
+.hearts-top,
+.hearts-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.hearts-bottom {
   transform: rotate(180deg);
 }
 
-.heart-row span:nth-child(1),
-.heart-row span:nth-child(4) {
-  transform: scale(0.8);
-}
-
-.heart-row span:nth-child(2),
-.heart-row span:nth-child(3) {
-  transform: scale(1.2);
-  @media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(135deg, #000, #1a1a1a);
-    color: crimson;
-  }
-  .popup {
-    border: 2px solid crimson;
-    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  body {
-    background: linear-gradient(135deg, #fff, #f2f2f2);
-    color: darkred;
-  }
-  .popup {
-    border: 2px solid darkred;
-    box-shadow: 0 0 15px rgba(200, 0, 0, 0.2);
-  }
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 12px;
+.heart {
+  color: crimson;
   font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.2s ease;
-}
-
-.close-btn:hover {
-  transform: scale(1.2);
+  animation: heartbeat 1.4s infinite;
 }
