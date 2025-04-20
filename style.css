@@ -2,40 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Sancreek", serif;
-  font-weight: 400;
-  font-style: normal;
   background: linear-gradient(135deg, #000, #1a1a1a);
   color: crimson;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  .heart-row {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
-  color: crimson;
-  font-family: "Sancreek", serif;
-  animation: heartbeat 1.5s infinite ease-in-out;
-}
-
-.bottom-hearts span {
-  transform: rotate(180deg);
-}
-
-/* To form a stretched diamond illusion */
-.heart-row span:nth-child(1),
-.heart-row span:nth-child(4) {
-  transform: scale(0.8);
-}
-
-.heart-row span:nth-child(2),
-.heart-row span:nth-child(3) {
-  transform: scale(1.2);
-}
-
 }
 
 @keyframes pullCard {
@@ -52,106 +24,95 @@ body {
   }
 }
 
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
 .popup {
   width: 300px;
   aspect-ratio: 2.5 / 3.5;
   background: white;
   border: 2px solid crimson;
   border-radius: 20px;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   position: relative;
-  font-family: "Sancreek", serif;
   animation: pullCard 1s ease-out forwards;
-  transform-origin: center center;
+  font-family: "Sancreek", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
-.popup .title {
+.card-header {
+  font-family: "Sancreek", serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
   position: absolute;
   top: 8px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.2rem;
-  color: black;
-  font-weight: bold;
-}
-
-.corner {
-  position: absolute;
-  font-size: 1rem;
-  color: crimson;
-  font-weight: bold;
-  font-family: "Sancreek", serif;
-}
-
-.corner.top-left {
-  top: 10px;
-  left: 10px;
-}
-
-.corner.bottom-right {
-  bottom: 10px;
-  right: 10px;
-  transform: rotate(180deg);
 }
 
 .popup h2 {
-  font-family: "Sancreek", serif;
-  font-size: 2.2rem;
-  font-weight: 700;
+  font-size: 2rem;
   margin: 1rem 0 0.5rem;
-  color: crimson;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.popup p {
-  font-size: 1rem;
-  margin-bottom: 1.2rem;
+.fee-text {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1.5rem;
   color: crimson;
 }
 
 .popup button {
-  padding: 0.6rem 1.4rem;
+  padding: 0.8rem 1.5rem;
   background-color: crimson;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   font-family: "Sancreek", serif;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
+  z-index: 1;
 }
 
 .popup button:hover {
   background-color: #d40000;
-  @keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(1.3);
-  }
-  50% {
-    transform: scale(1);
-  }
-  75% {
-    transform: scale(1.2);
-  }
 }
 
-.corner {
-  position: absolute;
-  font-size: 1.2rem;
+.heart-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
   color: crimson;
-  font-weight: bold;
-  font-family: "Sancreek", serif;
   animation: heartbeat 1.5s infinite ease-in-out;
 }
 
+.bottom-hearts span {
+  transform: rotate(180deg);
 }
 
+.heart-row span:nth-child(1),
+.heart-row span:nth-child(4) {
+  transform: scale(0.8);
+}
+
+.heart-row span:nth-child(2),
+.heart-row span:nth-child(3) {
+  transform: scale(1.2);
+}
