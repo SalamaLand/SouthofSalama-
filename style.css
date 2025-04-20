@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   padding: 0;
@@ -33,56 +32,76 @@ body {
   background: white;
   border: 2px solid crimson;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   position: relative;
   font-family: "Sancreek", serif;
   animation: pullCard 1s ease-out forwards;
   transform-origin: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup .title {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.corner {
+  position: absolute;
+  font-size: 1rem;
+  color: crimson;
+  font-weight: bold;
+  font-family: "Sancreek", serif;
+}
+
+.corner.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.corner.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
 }
 
 .popup h2 {
   font-family: "Sancreek", serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 1rem 0 0.5rem;
   color: crimson;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .popup p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
   color: crimson;
 }
 
 .popup button {
-  padding: 0.8rem 1.5rem;
+  padding: 0.6rem 1.4rem;
   background-color: crimson;
   color: white;
   font-weight: bold;
   font-size: 1rem;
   font-family: "Sancreek", serif;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 .popup button:hover {
   background-color: #d40000;
-}
-
-.popup .label {
-  position: absolute;
-  top: 8px;
-  left: 12px;
-  font-size: 0.9rem;
-  color: crimson;
-  font-weight: bold;
-  font-family: "Sancreek", serif;
 }
 
