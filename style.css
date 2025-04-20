@@ -103,5 +103,29 @@ body {
 
 .popup button:hover {
   background-color: #d40000;
+  @keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+}
+
+.corner {
+  position: absolute;
+  font-size: 1.2rem;
+  color: crimson;
+  font-weight: bold;
+  font-family: "Sancreek", serif;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
 }
 
