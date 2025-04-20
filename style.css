@@ -83,7 +83,7 @@ body {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin: 1rem 0 0.5rem;
   color: crimson;
@@ -101,6 +101,7 @@ button {
   padding: 0.6rem 1.4rem;
   background-color: crimson;
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   font-weight: bold;
   font-size: 1rem;
   font-family: "Sancreek", serif;
@@ -124,13 +125,14 @@ button:hover {
   font-weight: bold;
   background: none;
   border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .heart-diamond {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.3rem;
+  gap: 1rem;
   margin: 0.5rem 0;
 }
 
@@ -139,7 +141,7 @@ button:hover {
 }
 
 .heart {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: crimson;
   animation: heartbeat 1s infinite;
 }
