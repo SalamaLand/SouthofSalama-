@@ -1,29 +1,49 @@
-<div class="popup">
-  <div class="close-btn" onclick="closePopup()">✕</div>
-  <div class="title">SALAMA ROYALE</div>
- <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <div class="corner top-left">8♥</div>
-  
-<div class="hearts above">
-  <span class="heart">♥</span>
-    <span class="heart">♥</span>
-    <span class="heart">♥</span>
-    <span class="heart">♥</span>
-  </div>
-  
-  <h2>Pay the house</h2>
-  <p>Fee: One (1) birthday wish</p>
-<div class="corner bottom-right">8♥</div>
-  
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salama Royale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <button onclick="window.location.href='wish.html'">PAY NOW</button>
+  <div class="popup" id="popupCard">
+    <button class="exit-btn" onclick="closePopup()">×</button>
 
-  <div class="hearts below">
-   <span class="heart upside-down">♥</span>
-    <span class="heart upside-down">♥</span>
-    <span class="heart upside-down">♥</span>
-    <span class="heart upside-down">♥</span>
+    <!-- Corners -->
+    <div class="corner top-left">8 ♥</div>
+    <div class="corner bottom-right">8 ♥</div>
+
+    <!-- Center title -->
+    <div class="title">SALAMA ROYALE</div>
+
+    <!-- Top hearts -->
+    <div class="hearts-top">
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+    </div>
+
+    <!-- Main content -->
+    <h2>Pay the house</h2>
+    <p>Fee: One (1) birthday wish</p>
+
+    <!-- Bottom hearts -->
+    <div class="hearts-bottom">
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+      <div class="heart">♥</div>
+    </div>
+
+    <!-- Button -->
+    <button onclick="window.location.href='https://your-wish-page-link.com'">PAY NOW</button>
   </div>
-</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
