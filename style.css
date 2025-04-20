@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Special Elite", system-ui;
+  font-family: "Sancreek", serif;
   font-weight: 400;
   font-style: normal;
   background: linear-gradient(135deg, #000, #1a1a1a);
@@ -38,7 +38,7 @@ body {
   text-align: center;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
   position: relative;
-  font-family: "Special Elite", system-ui;
+  font-family: "Sancreek", serif;
   animation: pullCard 1s ease-out forwards;
   transform-origin: center center;
 }
@@ -82,8 +82,8 @@ body {
   top: 8px;
   left: 12px;
   font-size: 0.9rem;
-  color: black;
+  color: crimson;
   font-weight: bold;
-  font-family: "Special Elite", system-ui;
+  font-family: "Sancreek", serif;
 }
 
