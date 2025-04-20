@@ -10,4 +10,9 @@ function startExperience() {
 
 function startGame() {
   alert("Let the game begin!");
+function closePopup() {
+  const popup = document.querySelector('.popup');
+  popup.style.display = 'none';
+}
+
 }
