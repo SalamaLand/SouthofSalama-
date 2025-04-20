@@ -10,8 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-.heart-row {
+  .heart-row {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
@@ -35,6 +34,8 @@ body {
 .heart-row span:nth-child(2),
 .heart-row span:nth-child(3) {
   transform: scale(1.2);
+}
+
 }
 
 @keyframes pullCard {
