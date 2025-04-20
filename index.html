@@ -4,47 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Salama Royale</title>
-  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">×</span>
 
-  <div class="popup" id="popupCard">
-    <button class="close-button" onclick="closePopup()">✕</button>
+    <!-- Corner Hearts (8 of Hearts) -->
+    <div class="corner top-left">8♥</div>
+    <div class="corner bottom-right">8♥</div>
 
-    <!-- Corners -->
-    <div class="corner top-left">8 ♥</div>
-    <div class="corner bottom-right">8 ♥</div>
-
-    <!-- Center title -->
+    <!-- Card Title -->
     <div class="title">SALAMA ROYALE</div>
 
-   <!-- Top hearts -->
-<div class="heart-row">
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-</div>
+    <!-- Hearts above "Pay the House" -->
+    <div class="heart-diamond">
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+    </div>
 
-<h2>Pay the house</h2>
+    <h2>Pay the House</h2>
+    <p style="color: crimson;">Fee: One (1) birthday wish</p>
 
-<p>Fee: One (1) birthday wish</p>
+    <!-- Hearts below "Pay Now" -->
+    <div class="heart-diamond flipped">
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+      <span class="heart">♥</span>
+    </div>
 
-    <!-- Button -->
-    <button class="pay-now">PAY NOW</button>
+    <button onclick="location.href='birthdaywish.html'">PAY NOW</button>
   </div>
-  
-  <!-- Bottom hearts -->
-<div class="heart-row bottom">
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-  <span class="heart">♥</span>
-</div>
 
-
-  <script src="script.js"></script>
+  <script>
+    function closePopup() {
+      document.getElementById("popup").style.display = "none";
+    }
+  </script>
 </body>
 </html>
 
