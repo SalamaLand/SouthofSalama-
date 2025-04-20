@@ -164,4 +164,26 @@ body {
   color: crimson;
   font-size: 1.2rem;
   animation: heartbeat 1.4s infinite;
+.hearts-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.heart {
+  font-size: 1.5rem;
+  color: crimson;
+  animation: heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
 }
