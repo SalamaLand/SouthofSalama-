@@ -61,7 +61,24 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+.corner {
+  position: absolute;
+  font-size: 1rem;
+  color: crimson;
+  font-weight: bold;
+  font-family: "Sancreek", serif;
+}
 
+.corner.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.corner.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
 .popup h2 {
   font-size: 2rem;
   margin: 1rem 0 0.5rem;
