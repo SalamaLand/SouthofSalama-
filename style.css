@@ -133,9 +133,6 @@ body {
   max-width: 200px;
 }
 
-.pay-now:hover {
-  background-color: #d40000;
-}
 
 .close-button {
   position: absolute;
