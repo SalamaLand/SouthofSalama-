@@ -132,4 +132,26 @@ body {
 .heart-row span:nth-child(2),
 .heart-row span:nth-child(3) {
   transform: scale(1.2);
+  @media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: crimson;
+  }
+  .popup {
+    border: 2px solid crimson;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(135deg, #fff, #f2f2f2);
+    color: darkred;
+  }
+  .popup {
+    border: 2px solid darkred;
+    box-shadow: 0 0 15px rgba(200, 0, 0, 0.2);
+  }
+}
+
 }
