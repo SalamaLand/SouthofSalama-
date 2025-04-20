@@ -63,20 +63,18 @@ body {
 }
 .corner {
   position: absolute;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: crimson;
   font-weight: bold;
   font-family: "Sancreek", serif;
 }
 
 .corner.top-left {
-  font-size: 3rem;
   top: 10px;
   left: 10px;
 }
 
 .corner.bottom-right {
-  font-size: 3rem;
   bottom: 10px;
   right: 10px;
   transform: rotate(180deg);
