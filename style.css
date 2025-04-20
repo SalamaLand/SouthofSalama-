@@ -63,7 +63,7 @@ body {
 }
 .corner {
   position: absolute;
-  font-size: 1rem;
+  font-size: 3rem;
   color: crimson;
   font-weight: bold;
   font-family: "Sancreek", serif;
@@ -82,7 +82,7 @@ body {
 .popup h2 {
   font-size: 2rem;
   margin: 1rem 0 0.5rem;
-  color: black;
+  color: crimson;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
