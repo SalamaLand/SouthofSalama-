@@ -3,8 +3,3 @@ function closePopup() {
   popup.style.display = 'none';
 }
 
-function startGame() {
-  alert("Let the game begin!");
-}
-
-}
