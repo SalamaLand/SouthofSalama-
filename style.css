@@ -119,21 +119,21 @@ body {
   color: crimson;
 }
 
-.popup button {
-  padding: 0.6rem 1.4rem;
-  background-color: crimson;
-  color: black;
-  font-weight: bold;
+.pay-now {
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
+  background-color: crimson;
+  color: white;
   font-family: "Sancreek", serif;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
   margin-top: 1rem;
+  max-width: 200px;
 }
 
-.popup button:hover {
+.pay-now:hover {
   background-color: #d40000;
 }
 
